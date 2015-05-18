@@ -1,0 +1,14 @@
+{application, qqwry,
+ [
+  {description, "ip to location for qqwry"},
+  {vsn, "1.0.0"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { qqwry_app, []}},
+  {env, [
+            {dbfile, "qqwry.dat"}
+        ]}
+ ]}.
